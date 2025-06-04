@@ -36,6 +36,9 @@ I am currently seeking my second Java development internship opportunity, partic
 <!-- 实际使用时需替换username -->
 [![RichardTam's GitHub stats](https://github-readme-stats.vercel.app/api?username=Desirea98&show_icons=true&theme=radical)](https://github.com/Desirea98)
 
+---
+
+### 👽 Line Graph
 ![Desirea98's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Desirea98&theme=xcode)
 
 
