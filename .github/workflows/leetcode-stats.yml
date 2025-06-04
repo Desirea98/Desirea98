@@ -1,46 +1,114 @@
-name: Update LeetCode Stats
+name: LeetCode Stats Tracker
 on:
   schedule:
-    - cron: '0 12 * * *'  # 每天 UTC 时间 12:00（北京时间 20:00）运行
-  workflow_dispatch:       # 允许手动触发
+    - cron: '0 12 * * *'  # 每天 UTC 12:00 (北京时间 20:00)
+  workflow_dispatch:
   push:
-    branches: [ main ]     # 推送时触发（测试用）
+    branches: [ main ]
 
 jobs:
-  update-stats:
+  update:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
+    - name: Checkout repo
       uses: actions/checkout@v4
-
-    - name: Get LeetCode stats
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install requests beautifulsoup4
+        
+    - name: Get LeetCode data
       id: leetcode
       run: |
-        # 调用 LeetCode GraphQL API
-        response=$(curl -s -X POST https://leetcode.cn/graphql/ \
-          -H "Content-Type: application/json" \
-          -H "User-Agent: GitHub-Actions" \
-          -d '{
-            "query": "query userQuestionProgress($userSlug: String!) { userProfileUserQuestionProgress(userSlug: $userSlug) { numAcceptedQuestions { difficulty count } } }",
-            "variables": { "userSlug": "dreamy-vvilessiy" }
-          }')
-
-        # 计算总解题量
-        solved=$(echo $response | jq -r '.data.userProfileUserQuestionProgress.numAcceptedQuestions | map(.count) | add')
-        echo "Solved: $solved"
-
-        # 输出结果供后续步骤使用
-        echo "SOLVED=$solved" >> $GITHUB_ENV
-
+        cat > get_leetcode.py <<EOF
+        import requests
+        import json
+        import os
+        
+        USER = "dreamy-vvilessiy"
+        HEADERS = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
+            "Referer": f"https://leetcode.cn/u/{USER}/"
+        }
+        
+        # 第一步：获取用户ID
+        user_url = f"https://leetcode.cn/u/{USER}/"
+        response = requests.get(user_url, headers=HEADERS)
+        
+        # 从HTML中提取用户ID
+        user_id = None
+        if response.status_code == 200:
+            start_idx = response.text.find('"userId":"') + 10
+            if start_idx != -1:
+                end_idx = response.text.find('"', start_idx)
+                user_id = response.text[start_idx:end_idx]
+        
+        if not user_id:
+            print("Failed to get user ID")
+            exit(1)
+        
+        # 第二步：使用GraphQL API获取数据
+        graphql_url = "https://leetcode.cn/graphql/"
+        query = """
+        query userQuestionProgress($userId: String!) {
+            userProfileUserQuestionProgress(userId: $userId) {
+                numAcceptedQuestions {
+                    difficulty
+                    count
+                }
+            }
+        }
+        """
+        
+        payload = {
+            "query": query,
+            "variables": {"userId": user_id}
+        }
+        
+        response = requests.post(
+            graphql_url,
+            headers=HEADERS,
+            json=payload
+        )
+        
+        if response.status_code != 200:
+            print("GraphQL API request failed")
+            exit(1)
+        
+        data = response.json()
+        solved = 0
+        try:
+            for item in data['data']['userProfileUserQuestionProgress']['numAcceptedQuestions']:
+                solved += item['count']
+        except KeyError:
+            print("Unexpected API response format")
+            exit(1)
+        
+        print(f"Solved: {solved}")
+        # 设置环境变量
+        with open(os.environ['GITHUB_ENV'], 'a') as f:
+            f.write(f"SOLVED={solved}\n")
+        EOF
+        
+        python get_leetcode.py
+        
     - name: Update README
       run: |
-        # 替换 README 中的占位符
-        sed -i "s|<!-- LEETCODE_START -->.*<!-- LEETCODE_END -->|<!-- LEETCODE_START -->\n![LeetCode Solved](https://img.shields.io/badge/LeetCode-$SOLVED-orange?logo=leetcode\&logoColor=white)\n<!-- LEETCODE_END -->|" README.md
-
+        # 使用新徽章格式
+        sed -i "s|<!-- LEETCODE_START -->.*<!-- LEETCODE_END -->|<!-- LEETCODE_START -->\n[![LeetCode](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2F${{ github.repository }}%2Fmain%2Fleetcode.json&query=%24.solved&label=LeetCode&color=ffa116&logo=leetcode&logoColor=white&labelColor=black&style=flat)](https://leetcode.cn/u/dreamy-vvilessiy/)\n<!-- LEETCODE_END -->|" README.md
+        
+        # 创建数据文件
+        echo '{"solved": "${{ env.SOLVED }}", "updated": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")"}' > leetcode.json
+        
     - name: Commit changes
       run: |
         git config user.name "github-actions"
         git config user.email "actions@users.noreply.github.com"
-        git add README.md
-        git commit -m "Update LeetCode stats: $SOLVED solved"
+        git add README.md leetcode.json
+        git commit -m "Update LeetCode stats: ${{ env.SOLVED }} solved"
         git push
