@@ -33,8 +33,8 @@ I am currently seeking my second Java development internship opportunity, partic
 ---
 
 ### 🔥 Leetcode Status
-<div align="center"> 
-  [![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06)](https://leetcode.cn/u/dreamy-vvilessiy/)
+<div align="center">
+<img src="https://leetcode-stats-six.vercel.app/api?username=dreamy-vvilessiy&theme=light" />
 </div>
 
 
