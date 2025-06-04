@@ -1,0 +1,46 @@
+name: Update LeetCode Stats
+on:
+  schedule:
+    - cron: '0 12 * * *'  # 每天 UTC 时间 12:00（北京时间 20:00）运行
+  workflow_dispatch:       # 允许手动触发
+  push:
+    branches: [ main ]     # 推送时触发（测试用）
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Get LeetCode stats
+      id: leetcode
+      run: |
+        # 调用 LeetCode GraphQL API
+        response=$(curl -s -X POST https://leetcode.cn/graphql/ \
+          -H "Content-Type: application/json" \
+          -H "User-Agent: GitHub-Actions" \
+          -d '{
+            "query": "query userQuestionProgress($userSlug: String!) { userProfileUserQuestionProgress(userSlug: $userSlug) { numAcceptedQuestions { difficulty count } } }",
+            "variables": { "userSlug": "dreamy-vvilessiy" }
+          }')
+
+        # 计算总解题量
+        solved=$(echo $response | jq -r '.data.userProfileUserQuestionProgress.numAcceptedQuestions | map(.count) | add')
+        echo "Solved: $solved"
+
+        # 输出结果供后续步骤使用
+        echo "SOLVED=$solved" >> $GITHUB_ENV
+
+    - name: Update README
+      run: |
+        # 替换 README 中的占位符
+        sed -i "s|<!-- LEETCODE_START -->.*<!-- LEETCODE_END -->|<!-- LEETCODE_START -->\n![LeetCode Solved](https://img.shields.io/badge/LeetCode-$SOLVED-orange?logo=leetcode\&logoColor=white)\n<!-- LEETCODE_END -->|" README.md
+
+    - name: Commit changes
+      run: |
+        git config user.name "github-actions"
+        git config user.email "actions@users.noreply.github.com"
+        git add README.md
+        git commit -m "Update LeetCode stats: $SOLVED solved"
+        git push
