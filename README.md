@@ -1,7 +1,7 @@
 <div align="center">
   
-# 𝐑𝐢𝐜𝐡𝐚𝐫𝐝𝐓𝐚𝐦'𝐬 𝐆𝐢𝐭𝐇𝐮𝐛 𝐏𝐫𝐨𝐟𝐢𝐥𝐞
-𝐇𝐇𝐔 𝐂𝐄->𝐍𝐉𝐔 𝐄𝐄 | 𝐒𝐲𝐬𝐭𝐞𝐦 𝐏𝐫𝐨𝐆𝐫𝐚𝐦𝐦𝐞𝐫 | 𝐉𝐚𝐯𝐚 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫
+# 𝙍𝙞𝙘𝙝𝙖𝙧𝙙𝙏𝙖𝙢'𝙨 𝙂𝙞𝙩𝙃𝙪𝙗 𝙋𝙧𝙤𝙛𝙞𝙡𝙚
+𝗛𝗛𝗨 𝗖𝗘->𝗡𝗝𝗨 𝗘𝗘 | 𝗦𝘆𝘀𝘁𝗲𝗺 𝗣𝗿𝗼𝗚𝗿𝗮𝗺𝗺𝗲𝗿 | 𝗝𝗮𝘃𝗮 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿
 
 [![Blog](https://img.shields.io/badge/tech_blog-desirea98.github.io/richard.github.io-FF4088?style=flat-square)](https://desirea98.github.io/richard.github.io/)
 [![Email](https://img.shields.io/badge/Email-richard--tam@smail.nju.edu.cn-0078D4?style=flat-square)](mailto:richard-tam@smail.nju.edu.cn)
@@ -12,7 +12,7 @@
 
 ---
 
-### 🛠️ 𝐓𝐞𝐜𝐡 𝐒𝐭𝐚𝐜𝐤
+### 🛠️ Tech Skills
 ![](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
@@ -26,13 +26,13 @@
 
 ---
 
-### 🚀 𝐁𝐫𝐢𝐞𝐟 𝐈𝐧𝐭𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐨𝐧
+### 🚀 Brief Introduction
 
 I am currently seeking my second Java development internship opportunity, particularly interested in Java development, LLM application development, and consumer-facing product development roles. My first professional experience was at Yum China, where I was primarily responsible for technology platform development and maintenance, and empowering QA departments with LLM and AIGC technologies.
 
 ---
 
-### 📊 𝐂𝐨𝐝𝐢𝐧𝐠 𝐒𝐭𝐚𝐭𝐬
+### 📊 Coding Status
 <!-- 实际使用时需替换username -->
 [![RichardTam's GitHub stats](https://github-readme-stats.vercel.app/api?username=Desirea98&show_icons=true&theme=radical)](https://github.com/Desirea98)
 
@@ -40,7 +40,7 @@ I am currently seeking my second Java development internship opportunity, partic
 
 ---
 
-### 📫 𝐂𝐨𝐧𝐧𝐞𝐜𝐭
+### 📫 Communication
 📧 ​**richard-tam@smail.nju.edu.cn**  
 🌐 [个人主页](https://desirea98.github.io/richard.github.io/)  
 📍 江苏南京 | 🏫 南京大学
