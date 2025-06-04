@@ -18,10 +18,8 @@
 ![](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 ![](https://img.shields.io/badge/Spring_AI-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
-![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![](https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![](https://img.shields.io/badge/Dify-1C64F2?style=for-the-badge&logo=dify&logoColor=white)
 ![](https://img.shields.io/badge/Reinforcement_Learning-FF6B6B?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![](https://img.shields.io/badge/LLM-4285F4?style=for-the-badge&logo=openai&logoColor=white)
@@ -38,17 +36,11 @@ I am currently seeking my second Java development internship opportunity, partic
 <!-- 实际使用时需替换username -->
 [![RichardTam's GitHub stats](https://github-readme-stats.vercel.app/api?username=Desirea98&show_icons=true&theme=radical)](https://github.com/Desirea98)
 
-<div align="center"> 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Desirea98" /> 
-</div>
 
 <div align="center"> 
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Desirea98" /> 
 </div>
 
-<div align="center"> 
-  <img src="https://profile-counter.glitch.me/Desirea98/count.svg" /> 
-</div>
 
 ---
 
