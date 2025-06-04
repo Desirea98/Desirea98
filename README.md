@@ -32,6 +32,10 @@ I am currently seeking my second Java development internship opportunity, partic
 
 ---
 
+### 🔥 Leetcode Status
+![](https://stats.justsong.cn/api/leetcode?username=dreamy-vvilessiy&cn=true)
+
+
 ### 📊 Coding Status
 <!-- 实际使用时需替换username -->
 [![RichardTam's GitHub stats](https://github-readme-stats.vercel.app/api?username=Desirea98&show_icons=true&theme=radical)](https://github.com/Desirea98)
