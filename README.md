@@ -32,11 +32,6 @@ I am currently seeking my second Java development internship opportunity, partic
 
 ---
 
-### 🔥 Leetcode Status
-<!-- LEETCODE_START -->
-![LeetCode Solved](https://img.shields.io/badge/LeetCode-0-orange?logo=leetcode&logoColor=white)
-<!-- LEETCODE_END -->
-
 
 ### 📊 Coding Stats
 <div align="center">
