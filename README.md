@@ -33,7 +33,7 @@ I am currently seeking my second Java development internship opportunity, partic
 ---
 
 ### 🔥 Leetcode Status
-[![Leetcode 统计](https://leetcode.card.workers.dev/dreamy-vvilessiy?theme=auto&font=baloo&extension=activity&site=cn)](https://leetcode.cn/u/dreamy-vvilessiy/)
+
 
 
 ### 📊 Coding Stats
