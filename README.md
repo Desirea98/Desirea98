@@ -34,15 +34,16 @@ I am currently seeking my second Java development internship opportunity, partic
 
 ### 🔥 Leetcode Status
 <div align="center"> 
-  <img src="https://leetcard.jacoblin.cool/dreamy-vvilessiy/?theme=light&font=Baloo%202&ext=heatmap" /> 
+  [![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06)](https://leetcode.cn/u/dreamy-vvilessiy/)
 </div>
 
 ---
 
 ### 📊 Coding Stats
 <!-- 实际使用时需替换username -->
-[![RichardTam's GitHub stats](https://github-readme-stats.vercel.app/api?username=Desirea98&show_icons=true&theme=radical)](https://github.com/Desirea98)
-
+<div align="center"> 
+  [![RichardTam's GitHub stats](https://github-readme-stats.vercel.app/api?username=Desirea98&show_icons=true&theme=radical)](https://github.com/Desirea98)
+</div>
 ---
 
 ### 👽 Line Graph
