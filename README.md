@@ -34,7 +34,7 @@ I am currently seeking my second Java development internship opportunity, partic
 
 ### 🔥 Leetcode Status
 <div align="center"> 
-  <img src="https://leetcard.jacoblin.cool/dreamy-vvilessiy?theme=light&font=Baloo%202&ext=heatmap" /> 
+  <img src="https://leetcard.jacoblin.cool/dreamy-vvilessiy/?theme=light&font=Baloo%202&ext=heatmap" /> 
 </div>
 
 ---
