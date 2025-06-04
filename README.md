@@ -44,7 +44,6 @@ I am currently seeking my second Java development internship opportunity, partic
 <a href="https://github.com/Desirea98">
   <img src="https://github-readme-stats.vercel.app/api?username=Desirea98&show_icons=true&theme=radical" />
 </a>
----
 
 ### 👽 Line Graph
 ![Desirea98's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Desirea98&theme=xcode)
