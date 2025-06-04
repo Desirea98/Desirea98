@@ -41,9 +41,9 @@ I am currently seeking my second Java development internship opportunity, partic
 
 ### 📊 Coding Stats
 <!-- 实际使用时需替换username -->
-<div align="center"> 
-  [![RichardTam's GitHub stats](https://github-readme-stats.vercel.app/api?username=Desirea98&show_icons=true&theme=radical)](https://github.com/Desirea98)
-</div>
+<a href="https://github.com/Desirea98">
+  <img src="https://github-readme-stats.vercel.app/api?username=Desirea98&show_icons=true&theme=radical" />
+</a>
 ---
 
 ### 👽 Line Graph
