@@ -33,7 +33,9 @@ I am currently seeking my second Java development internship opportunity, partic
 ---
 
 ### 🔥 Leetcode Status
-![](https://stats.justsong.cn/api/leetcode?username=RichardTam&cn=true)
+<div align="center"> 
+  <img src="https://stats.justsong.cn/api/leetcode?username=dreamy-vvilessiy&cn=true" /> 
+</div>
 
 ---
 
