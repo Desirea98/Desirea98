@@ -37,13 +37,14 @@ I am currently seeking my second Java development internship opportunity, partic
   [![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06)](https://leetcode.cn/u/dreamy-vvilessiy/)
 </div>
 
----
 
 ### 📊 Coding Stats
-<!-- 实际使用时需替换username -->
+<div align="center">
 <a href="https://github.com/Desirea98">
   <img src="https://github-readme-stats.vercel.app/api?username=Desirea98&show_icons=true&theme=radical" />
 </a>
+</div>
+
 
 ### 👽 Line Graph
 ![Desirea98's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Desirea98&theme=xcode)
