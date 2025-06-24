@@ -28,7 +28,7 @@
 
 ### 🚀 Brief Introduction
 
-I am currently seeking my second Java development internship opportunity, particularly interested in Java development, LLM application development, and consumer-facing product development roles. My first professional experience was at Yum China, where I was primarily responsible for technology platform development and maintenance, and empowering QA departments with LLM and AIGC technologies.
+I am currently an intern on the main site recommendation system within the Community Science department at Kuaishou, primarily acting as a liaison between users and algorithm engineers. My first professional experience was at Yum China, where I was primarily responsible for technology platform development and maintenance, and empowering QA departments with LLM and AIGC technologies.
 
 ---
 
