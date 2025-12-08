@@ -28,7 +28,8 @@
 
 ### 🚀 Brief Introduction
 
-I am currently an intern on the main site recommendation system within the Community Science department at Kuaishou, primarily acting as a liaison between users and algorithm engineers. My first professional experience was at Yum China, where I was primarily responsible for technology platform development and maintenance, and empowering QA departments with LLM and AIGC technologies.
+I am currently an intern in the International Payments Department at ByteDance. Prior to this, I served as an intern on the main site recommendation system within the Community Science department at Kuaishou, where I primarily acted as a liaison between users and algorithm engineers, facilitating effective communication and collaboration to align product needs with technical implementations.
+My professional focus lies in backend development, with hands-on experience in payment systems, recommendation algorithms, and cross-team coordination. I am proficient in translating business requirements into technical solutions and thrive in dynamic, fast-paced environments that demand both technical rigor and collaborative problem-solving.
 
 ---
 
