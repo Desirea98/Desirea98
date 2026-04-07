@@ -28,8 +28,9 @@
 
 ### 🚀 Brief Introduction
 
-I am currently an intern in the International Payments Department at ByteDance. Prior to this, I served as an intern on the main site recommendation system within the Community Science department at Kuaishou, where I primarily acted as a liaison between users and algorithm engineers, facilitating effective communication and collaboration to align product needs with technical implementations.
-My professional focus lies in backend development, with hands-on experience in payment systems, recommendation algorithms, and cross-team coordination. I am proficient in translating business requirements into technical solutions and thrive in dynamic, fast-paced environments that demand both technical rigor and collaborative problem-solving.
+I currently work as an engineer on recommendation systems for Tencent's WXG video platform. Previously, I was an architecture intern at ByteDance's data department working on Douyin's message recommendation system. Before that, I was an intern in Kuaishou's community science department, primarily responsible for communication and coordination between users and algorithm engineers, promoting effective communication and collaboration, and ensuring product requirements aligned with technical implementation.
+
+My expertise lies in recommendation, advertising, search engineering, and AI infrastructure. I have practical experience in recommendation algorithms and cross-team collaboration. I excel at translating business requirements into technical solutions and can thrive in dynamic, fast-paced environments, maintaining technical rigor while effectively collaborating to solve problems.
 
 ---
 
