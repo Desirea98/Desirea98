@@ -51,7 +51,6 @@ My expertise lies in recommendation, advertising, search engineering, and AI inf
 
 ### 📫 Communication
 📧 ​**richard-tam@smail.nju.edu.cn**  
-🌐 [个人主页](https://desirea98.github.io/richard.github.io/)  
 📍 江苏南京 | 🏫 南京大学
 
  ![](https://raw.githubusercontent.com/Desirea98/Desirea98/7a3a82c2c544980557b155c5c55c47cca53de1e4/profile-3d-contrib/profile-night-rainbow.svg)
